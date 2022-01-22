@@ -258,7 +258,7 @@ let getBlockStyle = () =>{  // .blk0_r0_f
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~生成宽高样式函数~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 let sizeStyle_text = ''    // 生成宽高样式
-let getSizeStyle = () =>{ // .S2_Frg{width:var(--XLw);height:var(--XLh);font-size:var(--XLf);border-radius:var(--XLf);background:transparent;color:var(--r0);border: 4rpx solid red;}
+let getSizeStyle = () =>{ // .S2_Frg{width:var(--XLw);height:var(--XLh);font-size:var(--XLf);border-radius:var(--XLf);background:transparent;color:var(--r0);border: 4px solid red;}
   // 总共四层循环  
   // 循环大小
   whArr.forEach((v,i)=>{

@@ -1,0 +1,50 @@
+[data-component=app] {
+    min-height: 100vh;
+    background-color: $w4;
+    .bgc0{
+        background-image: url('../../assets/images/books.png');
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+    .bgc{
+        background-image: url('../../assets/images/icons/icon.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+
+    /*enter：入场前*/
+    .fade-enter {
+        opacity: 0;
+        transform: translateY(-300px);
+        transition: all 0.7s linear;
+    }
+    /*enter-active：入场后到入场结束*/
+    .fade-enter-active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    /*enter-done：入场动画执行完毕后，保持状态*/
+    .fade-enter-done {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    /*enter：出场前*/
+    .fade-exit {
+        opacity: 0;
+    }
+    /*enter-active：出场后到出场结束*/
+    .fade-exit-active {
+        opacity: 0;
+    }
+    /*enter-done：出场动画执行完毕后，保持状态*/
+    .fade-exit-done {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
+
+
+
+
+

@@ -455,7 +455,7 @@ module.exports = function (webpackEnv) {
               exclude: /@babel(?:\/|\\{1,2})runtime/,
               loader: require.resolve('babel-loader'),
               options: {
-                babelrc: false,
+                babelrc: true,
                 configFile: false,
                 compact: false,
                 presets: [
@@ -532,7 +532,14 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 'sass-loader'
-              ),
+              ).concat([
+                {
+                    loader: "sass-resources-loader",
+                    options: {
+                        resources: path.join(__dirname, "../src/assets/styles/base.scss")
+                    }
+                }
+              ]),
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               // Remove this when webpack adds a warning or an error for this.
@@ -555,7 +562,14 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 'sass-loader'
-              ),
+              ).concat([
+                {
+                    loader: "sass-resources-loader",
+                    options: {
+                        resources: path.join(__dirname, "../src/assets/styles/base.scss")
+                    }
+                }
+              ]),
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.

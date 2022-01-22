@@ -1,0 +1,60 @@
+// // index.css:
+// body {
+//     margin: 0;
+//     padding: 0;
+//     font-family: sans-serif;
+//   }
+  
+//   .shoppingCart_button {
+//     width: 100px;
+//     padding: 10px 10px;
+//     border: 1px #eee solid;
+//     cursor: pointer;
+//     user-select: none;
+//     margin-bottom: 50px
+//   }
+  
+//   /*被执行元素默认样式*/
+//   // .main {
+//   //   opacity: 0;
+//   //   transform: translateX(200px);
+//   //   transition: all 0.5s linear;
+//   //   width: 400px;
+//   //   height: 400px;
+//   //   background-color: #000;
+//   //   border: 1px #eee solid;
+//   //   border-radius: 10px
+//   // }
+  
+//   /*enter：入场前*/
+//   .fade-enter {
+//     opacity: 0;
+//   }
+  
+//   /*enter-active：入场后到入场结束*/
+//   .fade-enter-active {
+//     transform: translateX(0px);
+//     opacity: 1;
+//   }
+  
+//   /*enter-done：入场动画执行完毕后，保持状态*/
+//   .fade-enter-done {
+//     transform: translateX(0px);
+//     opacity: 1;
+//   }
+  
+//   /*enter：出场前*/
+//   .fade-exit {
+//     opacity: 1;
+//   }
+  
+//   /*enter-active：出场后到出场结束*/
+//   .fade-exit-active {
+//     transform: translateX(200px);
+//     opacity: 0;
+//   }
+  
+//   /*enter-done：出场动画执行完毕后，保持状态*/
+//   .fade-exit-done {
+//     opacity: 0;
+//   }

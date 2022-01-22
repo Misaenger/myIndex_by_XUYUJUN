@@ -1,0 +1,9 @@
+{
+    "plugins": [
+        ["import", {
+        "libraryName": "antd-mobile",
+        "libraryDirectory": "es/components",
+        "style": "false" // `style: true` 会加载 less 文件   false/true/css
+        }]
+    ]
+}

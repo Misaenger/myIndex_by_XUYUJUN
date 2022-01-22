@@ -1,0 +1,62 @@
+$fw0: 400;
+$fw1: 700;
+/* 颜色变量统一 黑白红黄蓝绿橙  font.wxss*/
+$b0: black;
+$b1: #333333;
+$b2: #666666;
+$b3: #999999;
+$b4: #C7C8C9;   
+$bg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );   
+$w0: white;
+$w1: #F6F7F9;       /* 背景色 */
+$w2: #eeeeee;
+$w3: #F0F0F0;
+$w4: #FEE7D6;       /* 辅色调 */
+$wg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );
+$r0: red;
+$r1: #FF2419;       /* 辅色调 */
+$r2: #F23D3D;       /* 主色调 */
+$r3: #F56464;
+$r4: #F56464;
+$rg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );
+$y0: yellow;
+$y1: #FFCF1A;
+$y2: #FFC500;
+$y3: #FFC500;
+$y4: #FFC500;
+$yg: -webkit-linear-gradient( 0deg, #FDEFC8,#E9D79B);
+$l0: blue;
+$l1: #108EE9;       /* 辅色调 */
+$l2: #1D9AD9;       
+$l3: #6EA6EF;
+$l4: #6EA6EF;
+$lg: -webkit-linear-gradient( 0deg, #4bb0ff, #6149f6); 
+$g0: green;
+$g1: green;
+$g2: green;
+$g3: green;
+$g4: green;
+$gg: -webkit-linear-gradient( 0deg, #32CD32, #338E55);
+$o0: orange;
+$o1: #F4A200;      /* 辅色调 */
+$o2: #FF8142;
+$o3: #CEA85B;     /* 辅色调 */
+$o4: #CEA85B;     /* 辅色调 */
+$og: -webkit-linear-gradient( 0deg, #FDEFC8,#E9D79B);
+/* 透明色 */
+$alp0: rgba(255, 255, 255, 0.1);
+$alp1: rgba(255, 255, 255, 0.3);
+$alp2: rgba(255, 255, 255, 0.7);
+$alp3: rgba(255, 255, 255, 0.9);
+/* 边角圆角 */
+$rd0: 0;      /* 直角 */
+$rd1: 4px;    /* 小圆角 */
+$rd2: 8px;    /* 中圆角 */
+$rd3: 16px;   /* 大圆角 */
+$rd4: 50px;   /* 半圆 */
+$rd5: 50%;    /* 圆 */
+/* 边框、阴影值 */
+$bd: 2px solid $w2;       /* 边框值 */
+$sd: 0 0 10px 1px $w1;     /* 环绕阴影 */
+$sdt: 0 -3px 10px  $w1;    /* 上阴影 */
+$sdb: 0  3px 10px  $w1;    /* 下阴影 */

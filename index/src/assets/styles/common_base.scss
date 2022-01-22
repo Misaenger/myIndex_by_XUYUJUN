@@ -1,78 +1,21 @@
-/* 全局变量,用于文字引用 */
-$fw0: 400;
-$fw1: 700;
-/* 颜色变量统一 黑白红黄蓝绿橙  font.wxss*/
-$b0: black;
-$b1: #333333;
-$b2: #666666;
-$b3: #999999;
-$b4: #C7C8C9;   
-$bg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );   
-$w0: white;
-$w1: #F6F7F9;       /* 背景色 */
-$w2: #eeeeee;
-$w3: #F0F0F0;
-$w4: #FEE7D6;       /* 辅色调 */
-$wg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );
-$r0: red;
-$r1: #FF2419;       /* 辅色调 */
-$r2: #F23D3D;       /* 主色调 */
-$r3: #F56464;
-$r4: #F56464;
-$rg: -webkit-linear-gradient( 0deg, #FC5407,#CC1D25 );
-$y0: yellow;
-$y1: #FFCF1A;
-$y2: #FFC500;
-$y3: #FFC500;
-$y4: #FFC500;
-$yg: -webkit-linear-gradient( 0deg, #FDEFC8,#E9D79B);
-$l0: blue;
-$l1: #108EE9;       /* 辅色调 */
-$l2: #1D9AD9;       
-$l3: #6EA6EF;
-$l4: #6EA6EF;
-$lg: -webkit-linear-gradient( 0deg, #4bb0ff, #6149f6); 
-$g0: green;
-$g1: green;
-$g2: green;
-$g3: green;
-$g4: green;
-$gg: -webkit-linear-gradient( 0deg, #32CD32, #338E55);
-$o0: orange;
-$o1: #F4A200;      /* 辅色调 */
-$o2: #FF8142;
-$o3: #CEA85B;     /* 辅色调 */
-$o4: #CEA85B;     /* 辅色调 */
-$og: -webkit-linear-gradient( 0deg, #FDEFC8,#E9D79B);
-/* 透明色 */
-$alp0: rgba(255, 255, 255, 0.1);
-$alp1: rgba(255, 255, 255, 0.3);
-$alp2: rgba(255, 255, 255, 0.7);
-$alp3: rgba(255, 255, 255, 0.9);
-/* 边角圆角 */
-$rd0: 0;      /* 直角 */
-$rd1: 4px;    /* 小圆角 */
-$rd2: 8px;    /* 中圆角 */
-$rd3: 16px;   /* 大圆角 */
-$rd4: 50px;   /* 半圆 */
-$rd5: 50%;    /* 圆 */
-/* 边框、阴影值 */
-$bd: 2rpx solid $w2;       /* 边框值 */
-$sd: 0 0 10px 1px $w1;     /* 环绕阴影 */
-$sdt: 0 -3px 10px  $w1;    /* 上阴影 */
-$sdb: 0  3px 10px  $w1;    /* 下阴影 */
-
-/* 页面整体样式 */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  标签默认样式调整  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;  /*字体抗锯齿渲染*/
-    font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
     --integer-font: Avenir-Heavy,PingFang SC,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;  /*字体抗锯齿渲染*/
+    min-height: 100vh;
     background: $w1;  /*主要背景颜色*/
-    /* 常态文字 放page */
-    font-size: 26rpx;
+    font-size: 16px;  /* 常态文字 放page */
     color: $b1;
     font-weight: normal;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{  /* 解决盒子padding撑开问题 */
     padding: 0;
@@ -87,8 +30,11 @@ button {
     border: none;
 }
 image{ height: auto; width: auto; display: block;}  /* 兼容小程序widthFix图片加载问题 */
+Link,a{ text-decoration:none }
+ul { list-style:none;  margin:0px; }
 
-/*  */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  集成样式  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* 透明按钮   要绑定在父层容器上   通过style="opacity:3;"查看按钮宽高 */
 .opctbtn{position:relative;}
 .opctbtn>button{
@@ -121,6 +67,12 @@ image{ height: auto; width: auto; display: block;}  /* 兼容小程序widthFix�
     position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
+}
+.Fr{
+    position: fixed;
+    top: 0;
+    bottom: 0;
     right: 0;
 }
 .R{
@@ -208,6 +160,13 @@ image{ height: auto; width: auto; display: block;}  /* 兼容小程序widthFix�
     flex-direction: column;
     justify-content: space-between;
     /* align-items: flex-start;  默认左对齐 */
+    height: 100%;
+}
+.V_space_c {    /*垂直  右对齐 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
 }
 .V_space_r {    /*垂直  右对齐 */
